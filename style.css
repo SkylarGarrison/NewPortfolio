@@ -96,7 +96,7 @@ header {
 
   /*desktop*/
   @media all and (min-width: 800px) {
-    main .group {
+    .group {
       flex-direction: column;
     }
   }
