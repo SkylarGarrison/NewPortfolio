@@ -1,102 +1,101 @@
-/* styling the header so that the background is a little different from the body, it's a bit more visually appealing than a background of the same color */
+body{
+    background-color: #dcdcdc;
+    font-size: 17px;
+}
+
 header {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background: dimgray;
-  }
-  /* styling the header text so that it fits well with the background color; not too different from the rest of the page */
-  header h1, h3 {
-    text-align: center;
-    font-family: Georgia;
-    color:gainsboro;
-  }
-  
-  header h3 {
-    font-size: 18px;
-  }
-  /* I want to make sure the containers are centered in the page and aligned with the image */
-  article {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-  }
-  /* grouped selectors to cut down on lines of code */
-  p, ul, ol {
-    font-size: 16px;
-    font-family: Arial, sans-serif;
-    color: black;
-  }
-  
-  h2 {
+    background-image: url("images/header.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1590px 220px;
+    color: #fff;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+}
+
+header h1 {
+ text-align: center;
+ font-size: 35px;
+ font-family: Georgia;
+}
+
+header h3 {
     text-align: center;
     font-size: 25px;
-    color: blue;
-    font-family: Georgia;
-  }
-  /* aside from styling the links using pseudo-classes, I'd also like to change how the HTML is displayed */
-  a {
-    text-decoration: none;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-  }
-  
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  /* styling the nav page so that it appears in the center of the page */
-  nav{
+   }
+
+header nav {
+    text-align: center;
+}
+
+nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 40px auto;
   }
-  
-  nav a {
-    margin-right: 40px;
+
+nav a {
+      margin-right: 40px;
+      font-size: 20px;
+
   }
-  
-  img {
-    height: 300px;
+
+a {
+      text-decoration: none;
   }
-  
-  body{
-    background-color: whitesmoke;
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+article {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
   }
-  /* styling the hr as that it is a bit more prominent in appearance throughout the web page */
+
+  h2 {
+      text-align: center;
+  }
+
   hr {
-    box-align: center;
-    border: 1px solid gray;
-    width: 1000px;
+      width: 75%;
   }
-  /* Will help to center the nav panel just a bit more*/
-  nav a:last-of-type {
-    margin-right: 20px;
+
+  footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background: dimgray;
+        text-align: center;
   }
-  
-  /* pseudo-classes to style the links in their different states*/
-  a:link {color: black;}
-  a:visited {color: gray;}
-  a:hover {color: lightblue;}
-  a:active {color:lightgray;}
 
-
-  /* mobile */
-
-  .group {
+article form {
     display: flex;
     flex-direction: column;
-  }
+    width: 60%;
+    padding-left: 100px;
+}
 
-  .item {
-    flex: 1;
-    margin: 10px;
-  }
+article form div button {
+    height: 25px;
+    width: 65px;
+    display: flex;
+    flex-direction: row;
+}
 
-  /*desktop*/
-  @media all and (min-width: 800px) {
-    .group {
-      flex-direction: column;
+a:link {color: white;}
+a:visited {color: gray;}
+a:hover {color: lightblue;}
+a:active {color:lightgray;}
+
+/* Desktop */
+
+@media all and (min-width: 800px) {
+    article {
+        width: 60%;
     }
   }
