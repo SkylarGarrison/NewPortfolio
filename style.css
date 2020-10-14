@@ -24,7 +24,7 @@ header h3 {
     text-align: center;
     font-size: 25px;
     font-family: Georgia;
-    color: black;
+    color: purple;
    }
 
 header nav {
@@ -112,6 +112,10 @@ header div {
 }
 p {
     font-family: Georgia;
+}
+
+h3 {
+    color: purple;
 }
 
 /* Desktop */
