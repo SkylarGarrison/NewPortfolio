@@ -125,6 +125,14 @@ main ul {
     color: black;
 }
 
+.align {
+    float: right;
+}
+
+.aligns {
+    float:left;
+}
+
 /* Desktop */
 
 @media all and (min-width: 800px) {
