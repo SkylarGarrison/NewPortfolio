@@ -100,7 +100,7 @@ article form div button {
     flex-direction: row;
 }
 
-a:link {color: white;}
+a:link {color: black;}
 a:visited {color: purple;}
 a:hover {color: lightblue;}
 a:active {color:lightgray;}
